@@ -1,0 +1,25 @@
+{% extends 'e_darslik/base.html' %}
+{% load static %}
+
+{% block title %}Ro'yxatdan o'tish{% endblock %}
+
+
+{% block content %}
+
+<div class="form_box py-5">
+    <center>
+        <h1>Register</h1>
+        <form method="post">
+            {% csrf_token %}
+            {% for form in register_form %}
+            <p>
+                {{ form.label_tag }}<br>
+                {{ form }}
+            </p>
+            {% endfor %}
+            <button class="btn btn-primary" type="submit">Register</button>
+        </form>
+    </center>
+</div>
+
+{% endblock %}

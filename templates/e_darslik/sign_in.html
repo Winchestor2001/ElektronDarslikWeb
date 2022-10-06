@@ -1,0 +1,25 @@
+{% extends 'e_darslik/base.html' %}
+{% load static %}
+
+{% block title %}Kirish{% endblock %}
+
+
+{% block content %}
+
+<div class="form_box py-5">
+    <center>
+        <h1>Login</h1>
+        <form method="post">
+            {% csrf_token %}
+            {% for form in login_form %}
+            <p>
+                {{ form.label_tag }}<br>
+                {{ form }}
+            </p>
+            {% endfor %}
+            <button class="btn btn-primary" type="submit">Login</button>
+        </form>
+    </center>
+</div>
+
+{% endblock %}

@@ -1,0 +1,253 @@
+{% extends 'e_darslik/base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+
+{% block content %}
+
+
+{% include 'e_darslik/includes/navbar.html' %}
+
+
+<section class="abuot mt-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_slpkbdfp.json"
+                               background="transparent"
+                               speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="title_img p-2 ">
+                    <h1>"Python dasturlash tili" elekron resurs</h1>
+                </div>
+                <p>O’quv qo’llanma 5310200-Elektr energetikasi bakalavriat ta’lim yo’nalishida ta’lim olayotgan oliy
+                    o’quv
+                    yurti talabalari uchun mo’ljallangan bo’lib, undan boshqa ta’lim yo’nalishi talabalari va
+                    sohaning
+                    muhandis-texnik xodimlari ham foydalanishlari mumkin..</p>
+                <p>
+                    <span><i class="fa-regular fa-circle-check text-primary"></i></span>
+                    <span>Nazariy - bo'limda barcha ma'ruza mavzulari keltirilgan.</span>
+                </p>
+                <p>
+                    <span><i class="fa-regular fa-circle-check text-primary"></i></span>
+                    <span>Amaliy - bo'limda mavzuga doir amaliy mashqlar mavjud.</span>
+                </p>
+                <p>
+                    <span><i class="fa-regular fa-circle-check text-primary"></i></span>
+                    <span>E-Resurs - bo'limida elektron kitob, taqdimot va foydaliy sahifalar mavjud.</span>
+                </p>
+                <p>
+                    <span><i class="fa-regular fa-circle-check text-primary"></i></span>
+                    <span>Glossary - bo'limida fanga doir glossarylar keltirilgan.</span>
+                </p>
+                <p>
+                    <span><i class="fa-regular fa-circle-check text-primary"></i></span>
+                    <span>Quiz - bo'limida o'zlashtirilgan bilimlarni mustahkamlash mumkin.</span>
+                </p>
+                <p>
+                    <span><i class="fa-regular fa-circle-check text-primary"></i></span>
+                    <span>Yangiliklar - bo'limida dasturlashga doir maqolalar keltirilgan.</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="advert mt-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+                <div class="title_img p-3 mb-5">
+                    <h1>Yangiliklar</h1>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel owl-them">
+            <div class="carouselCard">
+                <img class="carouselCardImg" src="http://themesflat.com/html/softo/images/testimonial/02.jpg"
+                     alt="">
+                <div class="card-header mb-5 text-end bg-transparent border-0">
+                    <h3>Kang Qiang</h3>
+                    <p>Marketing Officer</p>
+                </div>
+                <div class="card-body mt-5 pt-4">
+                    <i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi exercitationem dolorem
+                        maxime?
+                        Earum,
+                        nisi?</i>
+                </div>
+            </div>
+            <div class="carouselCard">
+                <img class="carouselCardImg" src="http://themesflat.com/html/softo/images/testimonial/02.jpg"
+                     alt="">
+                <div class="card-header mb-5 text-end bg-transparent border-0">
+                    <h3>Kang Qiang</h3>
+                    <p>Marketing Officer</p>
+                </div>
+                <div class="card-body mt-5 pt-4">
+                    <i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi exercitationem dolorem
+                        maxime?
+                        Earum,
+                        nisi?</i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="animate_number mt-100">
+    <div class="bg_animated">
+        <video class="bg_animate" src="{% static 'img/animated_medium20211215-20299-1h3n3kk.mp4' %}" loop autoplay
+               muted></video>
+    </div>
+    <div class="bg_glass text-white">
+        <div class="container">
+            <div class="row text-center py-5">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div>
+                        <h1 class="fw-bold display-4 border-bottom">90</h1>
+                        <p>Talabalar</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div>
+                        <h1 class="fw-bold display-4 border-bottom">29</h1>
+                        <p>Amaliy mashg'ulotlar</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div>
+                        <h1 class="fw-bold display-4 border-bottom">65</h1>
+                        <p>Maruza mashg'ulotlari</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div>
+                        <h1 class="fw-bold display-4 border-bottom">18</h1>
+                        <p>Mustaqil ishlar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cards mt-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+                <div class="title_img p-3 mb-5">
+                    <h1>Elektron Kitoblar</h1>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel carousel owl-theme col justify-content-center">
+            <div class="w-75 back ">
+                <img class="img-fluid mx-auto" src="{% static 'img/простой Python.png' %}" alt="">
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <h4 class="fw-bold">Python Book</h4>
+                        <p class="fs-12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos eius
+                            aperiam et
+                            minima.</p>
+                        <button class="btn text-white btn-warning hvr-bounce-to-right ">Order Now</button>
+                    </div>
+                </div>
+                <div class="hover"></div>
+            </div>
+            <div class="w-75 back ">
+                <img class="img-fluid mx-auto" src="{% static 'img/izuchayem_python.png' %}" alt="">
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <h4 class="fw-bold">Python Book</h4>
+                        <p class="fs-12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos eius
+                            aperiam et
+                            minima.</p>
+                        <button class="btn text-white btn-warning hvr-bounce-to-right ">Order Now</button>
+                    </div>
+                </div>
+                <div class="hover"></div>
+            </div>
+            <div class="w-75 back ">
+                <img class="img-fluid mx-auto" src="{% static 'img/photo_2022-10-05_17-22-37.jpg' %}" alt="">
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <h4 class="fw-bold">Python Book</h4>
+                        <p class="fs-12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos eius
+                            aperiam et
+                            minima.</p>
+                        <button class="btn text-white btn-warning hvr-bounce-to-right ">Order Now</button>
+                    </div>
+                </div>
+                <div class="hover"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="glassary mt-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+                <div class="title_img p-3 mb-5">
+                    <h1>Glossary</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 pt-3">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front py-4">
+                            <h3 class="fw-bold">Above</h3>
+
+                        </div>
+                        <div class="flip-card-back py-4">
+                            <p>Tashqi ramkaning faqat yuqori chizig`i chiziladi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 pt-3">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front py-4">
+                            <h3 class="fw-bold">ALIGN atributi</h3>
+                        </div>
+                        <div class="flip-card-back py-4">
+                            <p>Tasvirning nisbiy egallab turgan joyini boshqarish imkoniyatini yaratib bеradi. U
+                                quyidagi ahamiyatga </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 pt-3">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front py-4">
+                            <h3 class="fw-bold">Amal qilish sohasi</h3>
+                        </div>
+                        <div class="flip-card-back py-4">
+                            <p>O’zgaruvchini ishlatish mumkin bo’lgan dastur sohasi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <center>
+            <button class="btn btn-primary py-3 px-5 mt-5">Ko'proq ko'rish</button>
+        </center>
+    </div>
+</section>
+
+
+{% include 'e_darslik/includes/footer.html' %}
+
+
+{% endblock %}
+
+

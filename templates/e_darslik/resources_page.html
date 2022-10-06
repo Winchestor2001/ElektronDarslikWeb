@@ -1,0 +1,95 @@
+{% extends 'e_darslik/base.html' %}
+{% load static %}
+
+{% block title %}Resource{% endblock %}
+
+
+{% block content %}
+
+
+{% include 'e_darslik/includes/navbar2.html' %}
+
+<section class="cards mt-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+                <div class="title_img p-3 mb-5">
+                    <h1>Elektron Kitoblar</h1>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel carousel owl-theme col justify-content-center">
+            {% for book in books %}
+            <div class="w-75 back ">
+                <img class="img-fluid mx-auto" src="{{ book.img.url }}" alt="">
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <h4 class="fw-bold">{{ book.name }}</h4>
+                        <p class="fs-12">{{ book.name }}</p>
+                        <a href="/media/{{ book.file }}" download class="btn text-white btn-warning hvr-bounce-to-right ">Order Now</a>
+                    </div>
+                </div>
+                <div class="hover"></div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="cards mt-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+                <div class="title_img p-3 mb-5">
+                    <h1>Taqdimotlar</h1>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel carousel owl-theme col justify-content-center">
+            {% for exposure in exposures %}
+            <div class="w-75 back ">
+                <img class="img-fluid mx-auto" src="{{ exposure.img.url }}" alt="">
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <h4 class="fw-bold">{{exposure.name}}</h4>
+                        <p class="fs-12">{{exposure.name}}</p>
+                        <a href="/media/{{ exposure.file }}" download class="btn text-white btn-warning hvr-bounce-to-right ">Order Now</a>
+                    </div>
+                </div>
+                <div class="hover"></div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="cards mt-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+                <div class="title_img p-3 mb-5">
+                    <h1>Internet Resurslari</h1>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel carousel owl-theme col justify-content-center">
+            {% for useful_link in useful_links %}
+            <div class="w-75 back ">
+                <img class="img-fluid mx-auto" src="{{ useful_link.img.url }}" alt="">
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <h4 class="fw-bold">{{useful_link.name}}</h4>
+                        <p class="fs-12">{{useful_link.name}}</p>
+                        <a href="{{ useful_link.link }}" class="btn text-white btn-warning hvr-bounce-to-right ">Visit</a>
+                    </div>
+                </div>
+                <div class="hover"></div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% include 'e_darslik/includes/footer.html' %}
+
+{% endblock %}

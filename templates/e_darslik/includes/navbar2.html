@@ -1,0 +1,56 @@
+<section class="header">
+    <!-- <div class="ui_disgn"></div> -->
+    <div class="menu py-4">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container border-bottom">
+                <a class="navbar-brand" href="">
+                    <h3 class="fw-bold logo"><span>Py</span>Darslik</h3>
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 col justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link hvr-underline-from-left" aria-current="page" href="{% url 'themes' %}">Nazariy</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link hvr-underline-from-left" aria-current="page" href="{% url 'practis_themes_page' %}">Amaliy</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link hvr-underline-from-left" aria-current="page" href="{% url 'resources_page' %}">E-Resurslar</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link hvr-underline-from-left" aria-current="page" href="{% url 'glossary_page' %}">Glossary</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link hvr-underline-from-left" aria-current="page" href="{% url 'quiz_page' %}">Quiz</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link hvr-underline-from-left" aria-current="page" href="{% url 'posts' %}">Yangiliklar</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link hvr-underline-from-left" aria-current="page" href="{% url 'code_editor' %}">Code Editor</a>
+                        </li>
+                        {% if request.user.is_authenticated %}
+                        <li class="nav-item ">
+                            <a class="nav-link hvr-underline-from-left" aria-current="page" href="{% url 'logout' %}">Chiqish</a>
+                        </li>
+                        {% else %}
+                        <li class="nav-item ">
+                            <a class="nav-link hvr-underline-from-left" aria-current="page" href="{% url 'sign_up' %}">Ro'yxatdan
+                                o'tish</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link hvr-underline-from-left" aria-current="page" href="{% url 'sign_in' %}">Kirish</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>

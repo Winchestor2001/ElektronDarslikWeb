@@ -1,0 +1,74 @@
+{% extends 'e_darslik/base.html' %}
+
+
+{% block title %}Quiz{% endblock %}
+
+
+{% block content %}
+
+<div class="quiz_main_div">
+    <div class="start_btn">
+        <button>Start Quiz</button>
+    </div>
+
+    <div class="info_box">
+        <div class="info_title">
+            <span>Some Rules of this Quiz</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. Lorem ipsum <span>15 seconds</span> sit amet.</div>
+            <div class="info">2. Lorem ipsum dolor sit amet.</div>
+            <div class="info">3. Lorem ipsum dolor sit amet.</div>
+            <div class="info">4. Lorem ipsum dolor sit amet.</div>
+            <div class="info">5. Lorem ipsum dolor sit amet.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+
+    <div class="quiz_box">
+        <header>
+            <div class="title">Awesome Quiz Application</div>
+            <div class="timer">
+                <div class="time_text">Time Left</div>
+                <div class="time_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="quiz_text">
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+            </div>
+            <div class="option_list">
+
+            </div>
+        </section>
+        <footer>
+            <div class="total_quiz">
+
+            </div>
+            <button class="next_btn">Next Quiz</button>
+        </footer>
+    </div>
+
+
+    <div class="result_box">
+        <div class="icon">
+            <i class="fa-solid fa-crown"></i>
+        </div>
+        <div class="complate_text">You've complated the Quiz!</div>
+        <div class="score_text">
+
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Exit Quiz</button>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+

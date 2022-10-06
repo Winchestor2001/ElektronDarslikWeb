@@ -1,0 +1,26 @@
+{% extends 'e_darslik/base.html' %}
+
+
+{% block title %}Nazariy{% endblock %}
+
+
+{% block content %}
+{% include 'e_darslik/includes/navbar2.html' %}
+<div class="container main_content shadow p-5 my-5" style="text-align: justify;">
+    <h1 class="title text-center">{{ theme.theme }}</h1>
+    <p class="body">
+        {{ theme.body | safe }}
+    </p>
+    {% if theme.video %}
+    <div class="video mb-3">
+        <center>
+            <iframe width="100%" height="600" src="https://www.youtube.com/embed/{{ theme.video }}"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </center>
+    </div>
+    {% endif %}
+</div>
+{% include 'e_darslik/includes/footer.html' %}
+{% endblock %}

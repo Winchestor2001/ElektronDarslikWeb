@@ -1,0 +1,19 @@
+{% extends 'e_darslik/base.html' %}
+
+
+{% block title %}Amaliy{% endblock %}
+
+
+{% block content %}
+{% include 'e_darslik/includes/navbar2.html' %}
+<div class="container">
+    <div class="themes_card shadow">
+        <ul>
+            {% for item in practis_theme %}
+                <li><a href="{% url 'practis_page' item.practis_slug %}">{{ item.practis_name }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% include 'e_darslik/includes/footer.html' %}
+{% endblock %}
