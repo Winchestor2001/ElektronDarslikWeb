@@ -28,6 +28,28 @@
 </head>
 <body>
 
+<div id="preloader">
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="roller"></div>
+            <div class="roller"></div>
+        </div>
+
+        <div id="loader2" class="loader">
+            <div class="roller"></div>
+            <div class="roller"></div>
+        </div>
+
+        <div id="loader3" class="loader">
+            <div class="roller"></div>
+            <div class="roller"></div>
+        </div>
+    </div>
+</div>
+
+<div class="right_toper_btn">
+    <span><img src="{% static 'img/rocket_up.png' %}"></span>
+</div>
 <section class="container-fluid p-0">
     {% block content %}
 
@@ -46,6 +68,7 @@
 <script src="{% static 'js/carusel.js' %}"></script>
 <script src="{% static 'js/anim.js' %}"></script>
 <script src="{% static 'js/quiz.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
 {% block script %}
 {% endblock %}
 </body>

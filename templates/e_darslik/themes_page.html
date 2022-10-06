@@ -1,16 +1,21 @@
 {% extends 'e_darslik/base.html' %}
 
 
-{% block title %}Nazariy{% endblock %}
+{% block title %}PyDarslik - Nazariy{% endblock %}
 
 
 {% block content %}
 {% include 'e_darslik/includes/navbar2.html' %}
-<div class="container">
+<div class="container text-center my-3">
+    <center>
+        <div class="title_img p-2 w-50">
+            <h1>Ma'ruza mavzulari</h1>
+        </div>
+    </center>
     <div class="themes_card shadow">
         <ul>
             {% for theme in themes %}
-                <li><a href="{% url 'theme_detail' theme.id %}">{{ theme.theme }}</a></li>
+            <li><a href="{% url 'theme_detail' theme.id %}">{{ theme.theme }}</a></li>
             {% endfor %}
         </ul>
     </div>

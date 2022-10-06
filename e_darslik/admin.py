@@ -15,7 +15,7 @@ class QuizesAdmin(admin.ModelAdmin):
 
 
 class PractisThemeAdmin(admin.ModelAdmin):
-    list_display = ['scince', 'practis_name']
+    list_display = ['scince', 'practis_name', 'practis_id']
     prepopulated_fields = {'practis_slug': ('practis_name',)}
 
 
@@ -44,3 +44,4 @@ admin.site.register(Glossary, GlossaryAdmin)
 admin.site.register(Post, PostAdmin)
 admin.site.register(ResourceCategory, ResourceCategoryAdmin)
 admin.site.register(Resource, ResourceAdmin)
+admin.site.register(Video)

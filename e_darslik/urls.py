@@ -7,7 +7,7 @@ urlpatterns = [
     path('themes/', views.themes_page, name='themes'),
     path('theme_detail/<int:pk>/', views.theme_detail, name='theme_detail'),
 
-    path('posts/', views.posts_page, name='posts'),
+    path('video_page/', views.video_page, name='video_page'),
     path('posts_detail/<int:pk>', views.posts_detail, name='posts_detail'),
 
     path('resources_page/', views.resources_page, name='resources_page'),
@@ -26,4 +26,5 @@ urlpatterns = [
     path('sign_up/', views.sign_up, name='sign_up'),
     path('sign_in/', views.sign_in, name='sign_in'),
     path('logout/', views.logout_user, name='logout'),
+
 ]

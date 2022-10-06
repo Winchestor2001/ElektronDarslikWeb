@@ -21,12 +21,11 @@
         <div class="owl-carousel carousel owl-theme col justify-content-center">
             {% for book in books %}
             <div class="w-75 back ">
-                <img class="img-fluid mx-auto" src="{{ book.img.url }}" alt="">
+                <img class="img_resize img-fluid mx-auto" src="{{ book.img.url }}" alt="">
                 <div class="overlay">
                     <div class="overlay-text">
                         <h4 class="fw-bold">{{ book.name }}</h4>
-                        <p class="fs-12">{{ book.name }}</p>
-                        <a href="/media/{{ book.file }}" download class="btn text-white btn-warning hvr-bounce-to-right ">Order Now</a>
+                        <a href="/media/{{ book.file }}" download class="btn text-white btn-warning hvr-bounce-to-right ">Yuklab olish</a>
                     </div>
                 </div>
                 <div class="hover"></div>
@@ -52,8 +51,7 @@
                 <div class="overlay">
                     <div class="overlay-text">
                         <h4 class="fw-bold">{{exposure.name}}</h4>
-                        <p class="fs-12">{{exposure.name}}</p>
-                        <a href="/media/{{ exposure.file }}" download class="btn text-white btn-warning hvr-bounce-to-right ">Order Now</a>
+                        <a href="/media/{{ exposure.file }}" download class="btn text-white btn-warning hvr-bounce-to-right ">Yuklab olish</a>
                     </div>
                 </div>
                 <div class="hover"></div>
@@ -79,8 +77,7 @@
                 <div class="overlay">
                     <div class="overlay-text">
                         <h4 class="fw-bold">{{useful_link.name}}</h4>
-                        <p class="fs-12">{{useful_link.name}}</p>
-                        <a href="{{ useful_link.link }}" class="btn text-white btn-warning hvr-bounce-to-right ">Visit</a>
+                        <a target="_blank" href="{{ useful_link.link }}" class="btn text-white btn-warning hvr-bounce-to-right ">Xavola</a>
                     </div>
                 </div>
                 <div class="hover"></div>

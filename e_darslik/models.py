@@ -36,6 +36,7 @@ class Quizes(models.Model):
 
 class PractisTheme(models.Model):
     scince = models.ForeignKey(Scince, on_delete=models.CASCADE)
+    practis_id = models.IntegerField(blank=True, null=True)
     practis_name = models.CharField(max_length=255)
     practis_slug = models.SlugField(max_length=255)
 
@@ -91,3 +92,10 @@ class Resource(models.Model):
     def __str__(self):
         return self.name
 
+
+class Video(models.Model):
+    title = models.CharField(max_length=255)
+    url = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.title

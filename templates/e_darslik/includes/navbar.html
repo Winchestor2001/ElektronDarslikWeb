@@ -10,7 +10,7 @@
     <div class="menu py-4">
         <nav class="navbar navbar-expand-lg">
             <div class="container border-bottom">
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="{% url 'home' %}">
                     <h3 class="fw-bold logo"><span>Py</span>Darslik</h3>
                 </a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
@@ -37,7 +37,7 @@
                             <a class="nav-link hvr-underline-from-left" aria-current="page" href="{% url 'quiz_page' %}">Quiz</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link hvr-underline-from-left" aria-current="page" href="{% url 'posts' %}">Yangiliklar</a>
+                            <a class="nav-link hvr-underline-from-left" aria-current="page" href="{% url 'video_page' %}">Video darslar</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link hvr-underline-from-left" aria-current="page" href="{% url 'code_editor' %}">Code Editor</a>
@@ -66,7 +66,7 @@
                 <div class="col-12 col-md-7">
                     <h1 class="display-5 text_color  fw-bold ">Python dasturlash tili fanidan elektron qo'llanma</h1>
                     <p>Kelajak kasbini <span class="fw-bold logo"><span>Py</span>Darslik</span> bilan o'rganing</p>
-                    <button class="btn btn-primary py-3 px-5 bg_red_color">Boshlash</button>
+                    <a href="{% url 'themes' %}" class="btn text-white btn-warning hvr-bounce-to-right py-3 px-5">Boshlash</a>
                 </div>
                 <div class="col-12 col-md-5">
 
