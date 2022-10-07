@@ -54,7 +54,7 @@ def practis_themes_page(request):
 
 
 def practis_page(request, slug):
-    practis = get_object_or_404(Practis, practis_name__practis_slug=slug)
+    practis = Practis.objects.filter(practis_name__practis_slug=slug)
     practis_theme = [item.practis_name.practis_name for item in practis]
     context = {'practis': practis, 'practis_theme': practis_theme[0]}
     return render(request, 'e_darslik/practis_page.html', context)

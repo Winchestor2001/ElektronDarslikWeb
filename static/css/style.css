@@ -835,6 +835,28 @@ body {
 
 
 
+.header-top{
+    background-color: #ffb400;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+}
+.header-top .left{
+    list-style: none;
+    padding-top:15px;
+}
+.header-top .left li{
+    margin-right: 25px;
+}
+.header-top .left li a{
+    text-decoration: none;
+    color: #fff;
+}
+.site_logo img{
+    width: 250px;
+}
+
 
 .right_toper_btn img{
   width:70px;
@@ -1263,6 +1285,8 @@ body {
 
 
 
+
+
 @media screen and (max-width:576px) {}
 
 @media screen and (max-width:768px) {
@@ -1273,6 +1297,9 @@ body {
         width: 90%;
         z-index: 1;
         opacity: 0.8;
+    }
+    .header-top{
+        display: none;
     }
 }
 
